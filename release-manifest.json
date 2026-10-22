@@ -6,11 +6,10 @@
   "inputReviewedZipSha256": "6ea04d2f4cf083c06d59ece6fd249cbd3edaf84c501f86c796ddb5073227685d",
   "packagingChanges": [
     "Added GPL LICENSE",
-    "Added corresponding-source location/build notice"
+    "Added corresponding-source location/build notice (SOURCE.txt)"
   ],
   "runtimeFiles": {
     "LICENSE": "7a50ab8ca2c8ea67ad182d9ccda0797144ca8c485a74d37d69c42783cdf936a4",
-    "SOURCE.md": "64e8dffc5226fe29772bfe05de178d368571d208df38505209a728391c63fff9",
     "composer.json": "5fbdd20086695f1fea409cd74d69c2a3f537b72f157cb007b5e14977b9ff4c22",
     "rankavia-speed.php": "a9cf68fbfe391b62923569821495d511bf482100a6ed1a27aad5e3040a9e915e",
     "readme.txt": "90a989974f0f12d8d87218574b061ac3a6c3cce840c5d4a58cba805fb45dc48c",
@@ -45,7 +44,8 @@
     "vendor/composer/autoload_static.php": "afcb523e72c143575cc78fe3992d84fd2ef102405ab14998a3304ae239813709",
     "vendor/composer/installed.json": "abfd77aef9c561d65380f28f5ea248e760baf8ecb3a7ae2f7a29a5b5396cf374",
     "vendor/composer/installed.php": "1ca570de9c23e77dfb7a91b5e8b16b675cb970d1bf7109282941a69796cbaa23",
-    "vendor/composer/platform_check.php": "efa64a484ec52731dd6445e314eed10d2c8f6a23286624a3535c4966076ac6c2"
+    "vendor/composer/platform_check.php": "efa64a484ec52731dd6445e314eed10d2c8f6a23286624a3535c4966076ac6c2",
+    "SOURCE.txt": "64e8dffc5226fe29772bfe05de178d368571d208df38505209a728391c63fff9"
   },
-  "artifactSha256": "4629c8bdaddc3dab17cecace34a9250597b01788eb8088b8422916f579a9e826"
+  "artifactSha256": "fa7a91dfc4e7a8dd6de5ef2b2cb3fb1a6484ecb4b545eb11ec81c698d4d351c5"
 }

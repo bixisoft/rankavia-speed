@@ -2,9 +2,9 @@
 
 Release: v0.1.0-preview.1. Runtime version: 0.1.0. Public source preparation; release asset publication waits for final checks.
 
-Install ZIP SHA256: `4629c8bdaddc3dab17cecace34a9250597b01788eb8088b8422916f579a9e826`.
+Install ZIP SHA256: `fa7a91dfc4e7a8dd6de5ef2b2cb3fb1a6484ecb4b545eb11ec81c698d4d351c5`.
 Reviewed predecessor ZIP SHA256: `6ea04d2f4cf083c06d59ece6fd249cbd3edaf84c501f86c796ddb5073227685d`.
-All predecessor runtime files are byte-identical. Only full GPL LICENSE and SOURCE.md were added. ZIP creation metadata is normalized across platforms. `release-manifest.json` records every packaged byte hash; `python tools/package.py` verifies them before packaging.
+All predecessor runtime files are byte-identical. Only full GPL LICENSE and SOURCE.txt were added. ZIP metadata is normalized and entries are stored without compression for platform-independent byte reproduction. `release-manifest.json` records every packaged byte hash; `python tools/package.py` verifies them before packaging.
 
 ## Existing evidence reused for identical runtime
 
