@@ -2,15 +2,15 @@
 
 Free, GPL-2.0-or-later WordPress plugin by Bixisoft.
 
-**Development preview â€” plugin version 0.1.0; release v0.1.0-preview.1.** Test on a disposable copy before using it on a live site. This repository is public source distribution, not a WordPress.org listing or a stable compatibility certification.
+**Development preview — plugin version 0.1.0; release v0.1.0-preview.2.** Test on a disposable copy before using it on a live site. This repository is public source distribution, not a WordPress.org listing or a stable compatibility certification.
 
 WordPress cleanup plus opt-in native script defer, Core prefetch restrictions and preconnect controls. No page cache, image/font optimizer, universal speed improvement or guaranteed Core Web Vitals result is included.
 
 ## Download and install
 
-Download **rankavia-speed.zip** from [the preview release](https://github.com/bixisoft/rankavia-speed/releases/tag/v0.1.0-preview.1). Upload that asset through WordPress Plugins â†’ Add New â†’ Upload Plugin, then activate. The GitHub-generated source archives contain development material and are not the install ZIP. Keep a database and file backup, especially before migration or changing asset loading.
+Download **rankavia-speed.zip** from [the preview release](https://github.com/bixisoft/rankavia-speed/releases/tag/v0.1.0-preview.2). Upload that asset through WordPress Plugins → Add New → Upload Plugin, then activate. The GitHub-generated source archives contain development material and are not the install ZIP. Keep a database and file backup, especially before migration or changing asset loading.
 
-Runtime requirements declared by the plugin: WordPress 6.5+, PHP 7.4+. Existing local runtime evidence uses WordPress 7.1.3/PHP 8.2. Exact PHP 7.4 syntax passes; actual minimum-version runtime, multisite, themes/builders and real source-plugin migration matrices remain incomplete. New CI results are additional evidence, not a replacement for that acceptance. Read [VALIDATION.md](VALIDATION.md) for limits and hashes.
+Requires WordPress 6.5+ and PHP 7.4+. Exact executable files passed coexistence/homepage acceptance on WordPress 6.5/PHP 7.4.33. File-identical predecessor Plugin Check 2.1 reported 0 errors and 0 warnings. Repository CI checks the normalized artifact before release. Read [VALIDATION.md](VALIDATION.md) for limits and hashes.
 
 ## Source and building
 

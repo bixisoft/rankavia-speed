@@ -2,7 +2,7 @@
   "slug": "rankavia-speed",
   "tag": "v0.1.0-preview.2",
   "pluginVersion": "0.1.0",
-  "status": "prepared local development preview; not published or WordPress.org listed",
+  "status": "development preview; not WordPress.org listed",
   "inputReviewedZipSha256": "75c9ba29181f34c48ba91184d9e759412f0e7ade50c960e442773319cc2ec312",
   "packagingChanges": [
     "Added GPL LICENSE",
@@ -83,5 +83,7 @@
     "vendor/composer/installed.json": "abfd77aef9c561d65380f28f5ea248e760baf8ecb3a7ae2f7a29a5b5396cf374",
     "vendor/composer/installed.php": "1ca570de9c23e77dfb7a91b5e8b16b675cb970d1bf7109282941a69796cbaa23",
     "vendor/composer/platform_check.php": "efa64a484ec52731dd6445e314eed10d2c8f6a23286624a3535c4966076ac6c2"
-  }
+  },
+  "artifactSha256": "0aaf59f4b535d5a231046d87912d97a40d6e6df945ca5dd6e0b1fc2fa710bcc8",
+  "reviewedFileIdenticalZipSha256": "63680c9314b9900e02f53994cf66764cd69ace0df57b28da0f85d76f6cea7052"
 }

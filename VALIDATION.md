@@ -1,3 +1,17 @@
+# Preview 2 validation
+
+Release tag: v0.1.0-preview.2. Plugin header: 0.1.0. Development preview, not WordPress.org listed or stable certification.
+
+Normalized install ZIP SHA256: `0aaf59f4b535d5a231046d87912d97a40d6e6df945ca5dd6e0b1fc2fa710bcc8`. tools/package.py reconstructs it with stored entries and fixed metadata, then enforces artifactSha256 and every runtime file hash.
+
+Reviewed file-identical ZIP: `63680c9314b9900e02f53994cf66764cd69ace0df57b28da0f85d76f6cea7052`. It used DEFLATE and different ZIP timestamps; that packaging metadata is normalized for cross-platform byte reproduction. The executable/content bytes are identical.
+
+- Exact predecessor Plugin Check 2.1.0 plugin_repo: 0 errors, 0 warnings. Repository CI separately packages/checks the normalized artifact.
+- WordPress6.5/PHP7.4.33 executable acceptance: both free plugins active, homepageHTTP200, no PHP errors; Rankavia analyzer23 and NBSP-only link warning passed.
+- Multisite, broad themes/builders and real competitor-version matrices remain open.
+
+## Prior preview evidence (historical)
+
 # Preview validation
 
 Release: v0.1.0-preview.1. Runtime version: 0.1.0. Public development preview; release asset is the manifest-verified install ZIP.
