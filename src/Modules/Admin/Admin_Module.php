@@ -60,6 +60,24 @@ final class Admin_Module implements Module {
 		// Priority 20 so the Rankavia top-level menu (priority 10) exists before we attach a submenu to it.
 		add_action( 'admin_menu', array( $this, 'register_menu' ), 20 );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
+		add_filter( 'rankavia_admin_nav_links', array( $this, 'nav_link' ) );
+	}
+
+	/**
+	 * List the Speed page in the Rankavia navigation when Rankavia is active.
+	 *
+	 * @param mixed $links Links collected so far.
+	 * @return array<int, mixed>
+	 */
+	public function nav_link( $links ): array {
+		$links   = is_array( $links ) ? array_values( $links ) : array();
+		$links[] = array(
+			'id'    => 'speed',
+			'title' => __( 'Speed', 'rankavia-speed' ),
+			'slug'  => self::MENU_SLUG,
+			'order' => 35,
+		);
+		return $links;
 	}
 
 	/**
@@ -233,11 +251,23 @@ final class Admin_Module implements Module {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
 		}
-		echo '<div class="wrap"><h1>' . esc_html__( 'Rankavia Speed', 'rankavia-speed' ) . '</h1>';
+		// Inside Rankavia the page uses its shared header and navigation; on its own it is a plain settings page.
+		$in_shell = has_action( 'rankavia_admin_shell_open' ) && has_action( 'rankavia_admin_shell_close' );
+		if ( $in_shell ) {
+			do_action( 'rankavia_admin_shell_open', 'speed', __( 'Speed', 'rankavia-speed' ) );
+			settings_errors();
+		} else {
+			echo '<div class="wrap"><h1>' . esc_html__( 'Rankavia Speed', 'rankavia-speed' ) . '</h1>';
+		}
 		echo '<form action="options.php" method="post">';
 		settings_fields( 'rankavia_speed' );
 		do_settings_sections( self::MENU_SLUG );
 		submit_button();
-		echo '</form></div>';
+		echo '</form>';
+		if ( $in_shell ) {
+			do_action( 'rankavia_admin_shell_close' );
+		} else {
+			echo '</div>';
+		}
 	}
 }

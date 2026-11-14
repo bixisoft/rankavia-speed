@@ -1,3 +1,30 @@
+# Preview 3 validation
+
+Release tag: `v0.1.0-preview.3`. Plugin header: `0.1.0`. Development preview, not WordPress.org listed or stable certification.
+
+Install ZIP SHA256: `64b6a039543dada3b8d1da71f3e7b610349e59c6698c8cd5683e6780550b2845`. `python tools/package.py` rebuilds it byte-for-byte from `release-manifest.json`.
+
+## What changed
+
+- When Rankavia is active, the Speed settings open inside the shared Rankavia header and navigation; on its own it stays a plain settings page.
+- readme.txt has the fuller External services disclosure.
+
+## How it was built
+
+Runtime PHP, data and readme come from bixisoft-plugins main `feb0847f`. The shared core is prefixed into the plugin namespace exactly as `tools/prefix-core.php` does. `vendor/` (bundled core and Composer maps) is unchanged from `v0.1.0-preview.2`: the shared core has no changes on main, and no runtime class was added or removed.
+
+## Checks run
+
+- PHP syntax (`php -l`, PHP 8.0) on every packaged PHP file; no residual unprefixed core namespace; every Composer classmap target present.
+- Admin JavaScript unit tests (Vitest) for the plugin and the shared admin UI passed in the source repository.
+- The exact install ZIP contents, with no development autoloader, activated on WordPress 7.1.4/PHP 7.4 (Playground) together with the other free plugin, without PHP errors or warnings. Front page HTTP 200 with title, description, Open Graph, Twitter card and JSON-LD output; robots.txt and the XML sitemap served.
+- The Speed screen opens inside the Rankavia navigation.
+
+## Not run for this preview
+
+- Plugin Check, PHPUnit, PHPCS and PHPStan (no Composer on the build machine; this repository's CI is disabled).
+- Multisite, broad theme/builder and real competitor-version matrices remain open.
+
 # Preview 2 validation
 
 Release tag: v0.1.0-preview.2. Plugin header: 0.1.0. Development preview, not WordPress.org listed or stable certification.

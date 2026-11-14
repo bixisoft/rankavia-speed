@@ -26,7 +26,7 @@ The optional preconnect origin list is empty by default. An administrator may en
 
 == External services ==
 
-The plugin makes no server-side HTTP requests. If an administrator configures preconnect origins, a visitor's browser may connect to those selected external origins. No origins are configured by default.
+The plugin makes no server-side HTTP requests to Rankavia or external services and does not send scan data. No preconnect origins are configured by default. If an administrator adds an HTTPS origin, a visitor's browser may connect to that origin while viewing an eligible public post or page. The origin can then receive connection information, such as the visitor's IP address, under that origin's own practices. This is for the administrator-selected resource hint, not a Rankavia scanner request. An administrator can remove an origin from the list or leave the list empty. Rankavia Speed does not store visitor connection data or control an external origin's retention.
 
 == Changelog ==
 
